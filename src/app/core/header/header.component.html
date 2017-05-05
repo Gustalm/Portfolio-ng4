@@ -1,4 +1,4 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+<nav appScrollMenu id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container">
     <a class="navbar-brand logo-container-header logo-canvas" pageScroll href="#developer">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="50px"
@@ -26,14 +26,12 @@
       <a href="en/"><img id="usaflag" class="flag"></a>
     </div>
     <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-
+      <button appMenuDropdown [menuCollapsed]="menuCollapsed" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" #menuCollapsed>
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden">
           <a href="#page-top"></a>

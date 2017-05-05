@@ -4,19 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { DeveloperComponent } from './developer/developer.component';
-import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import { CoreModule } from "app/core/core.module";
 import { DeveloperModule } from "app/developer/developer.module";
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { AboutModule } from "app/about/about.module";
 import { SkillsModule } from "app/skills/skills.module";
+import { ExperienceModule } from "app/experience/experience.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExperienceComponent,
     ContactComponent,
   ],
   imports: [
@@ -27,6 +25,7 @@ import { SkillsModule } from "app/skills/skills.module";
     DeveloperModule,
     AboutModule,
     SkillsModule,
+    ExperienceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

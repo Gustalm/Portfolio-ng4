@@ -4,11 +4,15 @@ import { FooterComponent } from "app/core/footer/footer.component";
 import { CommonModule } from "@angular/common";
 import { Ng2PageScrollModule } from "ng2-page-scroll/ng2-page-scroll";
 import { PageScrollConfig } from 'ng2-page-scroll';
+import { ScrollDirective } from "app/directives/scroll-menu.directive";
+import { MenuDropdownDirective } from "app/directives/menu-dropdown.directive";
 
 @NgModule({
     declarations: [
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        ScrollDirective,
+        MenuDropdownDirective
     ],
     imports: [
         Ng2PageScrollModule.forRoot(),
